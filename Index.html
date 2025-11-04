@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritheesh Reddy | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Modern Header with navigation -->
+  <header>
+    <div class="container header-flex">
+      <div class="hero-avatar">
+        <img src="https://ui-avatars.com/api/?name=Ritheesh+Reddy&background=6e72fc&color=fff&size=128" alt="Ritheesh Reddy Avatar" />
+      </div>
+      <div class="hero-intro">
+        <h1>Ritheesh Reddy Bolla</h1>
+        <p class="tagline">CSE(Data Science Graduate) </p>
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- About Section (with card style) -->
+    <section id="about" class="section card">
+      <h2>👋 About Me</h2>
+      <p>
+        Hello! I'm <b>Ritheesh Reddy</b>, a results-driven Data Science graduate with a passion for technology and innovation. I specialize in web development, data analytics, and building solutions that make a real impact.<br><br>
+        <b>What sets me apart?</b>
+      </p>
+      <ul class="about-highlights">
+        <li>🔍 Analytical mindset & strong problem-solving skills</li>
+        <li>💡 Creative approach to building user-friendly web applications</li>
+        <li>🤝 Collaborative team player with excellent communication</li>
+        <li>🚀 Eager to learn, adapt, and grow in fast-paced environments</li>
+      </ul>
+      <div class="about-contact">
+        <span>📞 7396877416</span>
+        <span>✉️ <a href="mailto:bollaritheeshreddy@gmail.com">bollaritheeshreddy@gmail.com</a></span>
+      </div>
+    </section>
+
+
+    <!-- Education Section (card style) -->
+    <section id="education" class="section card">
+      <h2>🎓 Education</h2>
+      <div class="card-list">
+        <div class="card-item">
+          <b>Bachelor of Technology</b> (Minor: Data Science)<br>
+          <span>Malla Reddy University, Hyderabad</span><br>
+          <span class="edu-detail">2024</span>
+        </div>
+        <div class="card-item">
+          <b>Intermediate (MPC)</b><br>
+          <span>Narayana Junior College, Hyderabad</span><br>
+          <span class="edu-detail">2020</span>
+        </div>
+        <div class="card-item">
+          <b>CBSE</b><br>
+          <span>V.V Central Public School, Khammam</span><br>
+          <span class="edu-detail">2018</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Skills Section (card style with icons) -->
+    <section id="skills" class="section card">
+      <h2>🛠️ Skills</h2>
+      <div class="card-list skills-list">
+        <div class="card-item"><span>🐍</span> Python</div>
+        <div class="card-item"><span>🌐</span> Web Development (HTML, CSS, JavaScript)</div>
+        <div class="card-item"><span>🗄️</span> SQL</div>
+        <div class="card-item"><span>📊</span> Power BI</div>
+      </div>
+    </section>
+
+
+    <!-- Projects Section (card style) -->
+    <section id="projects" class="section card">
+      <h2>🚀 Projects</h2>
+      <div class="card-list">
+        <div class="card-item">
+          <b>Full Stack Framework for University Sustainability</b> <span class="project-year">(2024)</span><br>
+          <span class="project-desc">Developed a user-friendly web platform for faculty to submit service complaints (electrical, plumbing, carpentry) for targeted campus improvements.</span>
+        </div>
+        <div class="card-item">
+          <b>Analysis of Planetary Warming</b> <span class="project-year">(2023)</span><br>
+          <span class="project-desc">Explored climate data to understand links between emissions, global warming, and community risks, fostering strategies for climate adaptation.</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Certifications Section (card style) -->
+    <section id="certifications" class="section card">
+      <h2>📜 Certifications</h2>
+      <div class="card-list">
+        <div class="card-item">AWS Academy Cloud Foundations</div>
+        <div class="card-item">Accenture: Data Analytics and Visualization Job Simulation (2025)</div>
+      </div>
+    </section>
+
+    <!-- Contact Section (with icons) -->
+    <section id="contact" class="section card">
+      <h2>📬 Contact</h2>
+      <!-- Use Formspree for dynamic email sending -->
+  <form id="contactForm" action="https://formspree.io/f/meolwbdr" method="POST" autocomplete="off">
+        <label for="name">👤 Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">✉️ Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">💬 Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <div id="formMessage" aria-live="polite"></div>
+      <script>
+        // Show a thank you message after submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+          var form = this;
+          setTimeout(function() {
+            document.getElementById('formMessage').textContent = "Thank you for reaching out! Your message has been sent.";
+            form.reset();
+          }, 1000);
+        });
+      </script>
+    </section>
+  </main>
+
+
+  <!-- Footer with social link and icon -->
+  <footer>
+    <div class="container">
+      <p>Connect:
+        <a href="https://linkedin.com/in/bolla-ritheesh-reddy-494850268" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for other features -->
+  <script src="script.js"></script>
+</body>
+</html>
